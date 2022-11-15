@@ -1,0 +1,97 @@
+/* normalize universal settings */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* set body and backgrounds */
+body {
+    font-family: 'Koulen', cursive;
+    background-color: #808080; /* for a darker grey colour #808080;*/
+    max-width: 100%;
+}
+
+.wrapper {
+    background-color: #C0C0C0;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* set headers */
+h1, h2 {
+    color: #325069; /* color: rgb(50,80,105); */
+    text-align: center;
+    text-decoration: underline;
+    font-size: 700%;
+}
+
+/* format image */
+img {
+    width: 100%;
+}
+.container {
+    position: relative;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* experimenting with hovering */
+.image-description {
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    visibility: hidden;
+    font-size: 3em;
+}
+
+.container:hover .image-description {
+    visibility: visible;
+    color:black;
+} 
+
+/* styling work history */
+.work-history ul {
+    list-style-type: none;
+    margin-left: 3em;
+    font-size: 4em;
+    text-align: left;
+    text-decoration: none;
+}
+
+/* navigation bar */
+.nav-bar ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    text-align: center;
+    font-size: 2em;
+    gap: 1em;
+}
+
+/* styling hyperlinks */
+a:link{
+    color:black;
+    text-decoration: none;
+}
+a:visited{
+    color: green;
+}
+
+a:hover {
+    text-decoration: underline;
+    color:hotpink;
+}
+
+/* styling for projects.html */
+.proj-list {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    font-size: 3em;
+    gap: 2em;
+    justify-content: center;
+    margin-left: 1em;
+    margin-right: 1em;
+}

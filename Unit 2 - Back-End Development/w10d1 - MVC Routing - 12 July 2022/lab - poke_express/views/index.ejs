@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+    <head>
+        <title>Pokemon</title>
+    </head>
+
+    <body>
+        
+        <h1><%= myPageTitle %></h1>
+
+        <ul>
+
+            <% pokemon.forEach(p => { %>
+
+                <li>
+                    <p><%= p.name %></p>
+                    <img src="<%= p.img %>.jpg" />
+                </li>
+
+            <% }) %>
+
+        </ul>
+
+    </body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Delegation</title>
+  <style>
+  </style>
+</head>
+<body>
+  <button onclick="addDom()">Add dynamic DOM elements</button>
+  <div id="parent-container">
+    <p>This is line 0</p>
+    <hr>
+  </div>
+
+  <script type="application/javascript">
+    const pElements = document.getElementsByTagName('p');
+    for(let i=0,j=pElements.length; i<j; i++) {
+      const element = pElements[i];
+      element.addEventListener('click', function(event) {
+        const elementClicked = event.target;
+        const elementWithEventHandler = this;
+        const msg = `target = ${elementClicked.textContent}, this = ${elementWithEventHandler.textContent}`;
+        console.log(msg);
+      });
+    }
+
+    function addDom() {
+      const parentDiv = document.getElementById('parent-container');
+
+      for (let i = 1; i <= 3; i++) {
+        const childP = document.createElement('p');
+        childP.textContent = `This is line ${i}`;
+
+        parentDiv.appendChild(childP);
+      }
+    }
+  </script>
+</body>
+</html>

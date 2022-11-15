@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>OAuth Demo</title>
+  </head>
+  <body>
+    <h1>Hello, OAuth!</h1>
+    <button type="button" onclick="initGithubOAuth()">Connect to Github</button>
+
+    <script>
+        function initGithubOAuth() {
+            // open window with url https://github.com/login/oauth/authorize
+
+            window.open("https://github.com/login/oauth/authorize?client_id=fb1aca93e3b5854c83eb&scope=repo,project");
+        }
+    </script>
+  </body>
+</html>

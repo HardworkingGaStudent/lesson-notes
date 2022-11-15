@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+    <head>
+        <title>Floats</title>
+
+        <style>
+            #content {
+                min-height: 10px;
+                background: red;
+            }
+            #content article {
+                float: left;
+                width: 50%
+            }
+            .clearfix {
+                clear: both;
+            }
+            .clearfix::after {
+                content: "";
+                clear: both;
+                display: table;
+            }
+        </style>
+    </head>
+
+    <body>
+        <section id="content" class="clearfix">
+            <article>
+                <h1>Health Benefits of McSpicy</h1>
+                <p>Bowel detox.</p>
+            </article>
+            
+            <article>
+                <h1>Why Salad is not as Healthy as You Think</h1>
+                <p>Too much sauce used in a single serving to mask the astringent taste of the salad.</p>
+            </article>
+        </section>
+    </body>
+
+</html>

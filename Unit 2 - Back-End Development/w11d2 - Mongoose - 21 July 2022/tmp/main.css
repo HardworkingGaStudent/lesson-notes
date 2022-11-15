@@ -1,0 +1,186 @@
+/* universal */
+body {
+    font-family: "Helvetica Neue", sans-serif;
+}
+
+#page-header {
+    padding: 30px 0;
+}
+
+#page-header figure {
+    margin:0;
+}
+
+#page-header figcaption {
+    display: inline;
+    margin-left: 10px;
+}
+
+#page-header figcaption a {
+    font-size: 20px;
+    color: #707070;
+}
+
+#page-header .nav-item a {
+    font-weight: 300;
+    font-size: 18px;
+    border-right: 1px solid #707070;
+    padding: 0 20px;
+    color: #707070;
+}
+
+#page-header .nav-item:last-of-type a {
+    border: none;
+    padding-right: 0;
+}
+
+main {
+    height: 500px;
+}
+
+/* index.html */
+#homepage-cover {
+    height: 100%;
+    background: url(./img/homepage-cover.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 80px;
+}
+
+
+#homepage-cover h1 {
+    color: white;
+    font-size: 32px;
+    font-weight: 100;
+    margin-bottom: 30px;
+}
+
+#homepage-cover button {
+    background: #EAEAEA;
+    font-size: 16px;
+    font-weight: 100;
+    padding: 10px 20px;
+}
+
+#page-home {
+    height: calc(100vh - 188px);
+}
+
+/* contact.html main class */
+.constrained-full-height {
+    min-height: calc(100vh - 188px);
+}
+
+/* page footer */
+#page-footer {
+    background: #F2F2F2;
+}
+
+#page-footer p {
+    margin: 0;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 12px;
+    font-weight: 100;
+}
+
+/* contact.html */
+#page-contact .bg-section {
+    background: url(./img/contact-cover.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#page-contact .content-section h1 {
+    font-size: 36px;
+    font-weight: 100;
+}
+
+#page-contact form label {
+    font-size: 18px;
+    font-weight: 100;
+}
+
+#page-contact .form-control {
+    background: #F9F9F9;
+    border: none;
+    padding: 10px 5px;
+}
+
+#page-contact form button {
+    background: #F9F9F9;
+    border: none;
+    color: black;
+    font-size: 16px;
+    font-weight: 100;
+    padding: 15px 30px;
+}
+
+.hr {
+    border-bottom: 1px solid #EAEAEA;
+    width: 80px;
+    margin: 0 auto;
+    height: 1px;
+}
+
+/* about.html */
+#page-about .bg-section {
+    background: url(./img/about.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#page-about .content-section h1 {
+    font-size: 36px;
+    font-weight: 100;
+}
+
+#page-about .content-section p {
+    font-size: 18px;
+    font-weight: 100;
+}
+
+/* baked-goods.html */
+#page-baked-goods .content-section h1 {
+    font-size: 36px;
+    font-weight: 100;
+}
+
+#page-baked-goods img {
+    width: 100%;
+}
+
+#page-baked-goods .product, .price {
+    font-size: 24px;
+    font-weight: 100;
+}
+
+#page-baked-goods .price {
+    font-style: italic;
+}
+
+/* about.html */
+#page-biscoff-choco-custard-pie .bg-section {
+    background: url(./img/biscoff-choco-custard-pie.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#page-biscoff-choco-custard-pie .content-section h1 {
+    font-size: 36px;
+    font-weight: 100;
+}
+
+#page-biscoff-choco-custard-pie .content-section p {
+    font-size: 18px;
+    font-weight: 100;
+}
+
+#page-biscoff-choco-custard-pie .hr {
+    margin: 0;
+}
+
+#page-biscoff-choco-custard-pie .content-section .price {
+    font-style: italic;
+    font-size: 24px;
+}

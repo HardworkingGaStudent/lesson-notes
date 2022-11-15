@@ -1,0 +1,84 @@
+/* normalize */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* set image size to each individual container */
+img {
+    width: 100%;
+}
+
+/* universal container */
+.parent {
+    display: flex;
+    max-width: 100%;
+    flex-wrap: wrap;
+    padding: 3em;
+    gap: 2em;
+}
+
+/* left column parent */
+.parent-nav {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    opacity: .5;
+    font-family: 'Lato', sans-serif;
+}
+
+/* formatting supply logo */
+.parent-nav img {
+    display:flex;
+    max-width: 20%;
+}
+
+/* formatting navigation bar */
+.parent-nav ul, li {
+    display:flex;
+    flex-direction:column;
+    margin: 2em 0em;
+    list-style-type: none;
+}
+
+/* right column parent */
+.parent-products {
+    display: flex;
+    flex: 10;
+    flex-direction: column;
+    gap: 2em;
+}
+
+/* first row */
+.products-main {
+    display:flex;
+    flex:1;
+}
+
+/* 2nd row */
+.products-sub {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+
+.products-sub div {
+    flex: 1;
+}
+
+/* 3rd row */
+.products-misc {
+    display: flex;
+    gap: 2em;
+}
+
+.products-misc div {
+    flex: 1;
+}
+
+/* bottom footer */
+footer {
+    background: #d6bc9b;
+    height: 100px;
+}

@@ -1,0 +1,9 @@
+.animals-container {
+    display: flex;
+    gap: 1em;
+    flex-flow: row wrap;
+    margin: 0 1em;
+    justify-content: center;
+    flex-direction: column;
+
+}
